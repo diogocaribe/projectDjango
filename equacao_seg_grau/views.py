@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from .forms import Equacao2GrauForm
 
 def eq_seg_grau(request):
 
