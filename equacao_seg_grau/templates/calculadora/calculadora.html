@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +10,7 @@
     <title>Equacao 2 Grau</title>
 </head>
 <body>
-    <header>
-        <h1>Calculadora Equação Segundo Grau</h1>
-    </header>
-
+    {% block content %}
     <!-- Fazer uma tabela para adicionar os parametros  da equação-->
     <div class="container text-center">
         <header>
@@ -41,6 +39,7 @@
         </table>
         <button type="submit" class="btn btn-primary btn-lg">Calcular</button>
         <p>Resultado: raizes X' e X''</p>
+    {% endblock %}
     </div>
 </body>
 </html>
