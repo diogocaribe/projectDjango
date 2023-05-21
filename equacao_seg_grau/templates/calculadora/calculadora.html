@@ -37,8 +37,19 @@
                 </td>
             </tr>        
         </table>
-        <button type="submit" class="btn btn-primary btn-lg">Calcular</button>
-        <p>Resultado: raizes X' e X''</p>
+        <button onClick="onclik_btn_calcular()" id="btn-calcular" class="btn btn-primary btn-lg">Calcular</button>
+        <p onClick="onclik_btn_calcular()" id="calcular-resultado"> Defina os parâmetros da função </p>
+
+        <script>
+            function onclik_btn_calcular(){
+                var a = document.getElementById("a").value
+                var b = document.getElementById("b").value
+                var c = document.getElementById("c").value
+                var equacao = "y = " + a + "x²" + "+" + b + "x" + "+" + c
+                console.log(equacao)
+                document.getElementById("calcular-resultado").innerHTML = "As raizes da equação: " + equacao + " são:"
+            }
+        </script>
     {% endblock %}
     </div>
 </body>
